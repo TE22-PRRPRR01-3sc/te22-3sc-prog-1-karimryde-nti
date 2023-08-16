@@ -1,0 +1,17 @@
+{
+    "recommendations": [
+        "ms-dotnettools.csharp",
+        "emmanuelbeziat.vscode-great-icons",
+        "github.classroom",
+        "chrisdias.vscode-opennewinstance",
+        "jebbs.plantuml",
+        "pierre3.csharp-to-plantuml",
+        "rogalmic.vscode-xml-complete",
+        "k--kato.docomment",
+        "redhat.vscode-xml",
+        "Karye.sessionlogger",
+        "eliostruyf.vscode-hide-comments",
+        "emmanuelbeziat.vscode-great-icons",
+        "richardzampieriprog.csharp-snippet-productivity",
+    ]
+}
