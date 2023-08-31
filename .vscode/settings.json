@@ -1,8 +1,5 @@
 {
     "workbench.iconTheme": "vscode-great-icons",
-    "workbench.editorAssociations": {   
-        "*.md": "vscode.markdown.preview.editor",
-    },
     "workbench.colorCustomizations": {
         "activityBar.background": "#3B1D61",
         "titleBar.activeBackground": "#532888",
