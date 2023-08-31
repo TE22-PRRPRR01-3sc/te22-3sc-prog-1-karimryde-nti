@@ -24,5 +24,6 @@
     "sessionlogger.enabled": false,
     "csharp.debug.console": "externalTerminal",
     "dotnet.server.useOmnisharp": true,
-    "omnisharp.enableMsBuildLoadProjectsOnDemand": true
+    "omnisharp.enableMsBuildLoadProjectsOnDemand": true,
+    "git.openRepositoryInParentFolders": "always"
 }
