@@ -1,7 +1,5 @@
-﻿// Inloggning för användare
-using System.Text;
-
-Console.Clear();
+// Inloggning för användare
+//Console.Clear();
 
 // Läs in användarnamn
 /* Console.Write("Ange användarnamn: ");
@@ -31,7 +29,6 @@ else
     Console.WriteLine("Användarnamn eller lösenordet stämmer inte!");
 } */
 
-// Kolla om inmatad färg är rätt
 Console.Write("Ange en färg (röd, grön , blå): ");
 string färg = Console.ReadLine();
 
@@ -39,17 +36,16 @@ if (färg == "röd")
 {
     Console.WriteLine("Du valde färgen röd");
 }
-else
-{
-    Console.WriteLine($"Färgen är {färg}");
-}
-/* else if (färg == "grön")
+else if (färg == "grön")
 {
     Console.WriteLine("Du valde färgen grön");
 }
 else if (färg == "blå")
 {
     Console.WriteLine("Ok, du valde blå!");
-} */
+} else
+{
+    Console.WriteLine($"Du valde färgen {färg}");
+}
+   
 
-Console.ReadKey();
