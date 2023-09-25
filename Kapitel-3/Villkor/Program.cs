@@ -1,5 +1,9 @@
 // Inloggning för användare
-//Console.Clear();
+using System.Text;
+Console.InputEncoding = Encoding.Unicode;
+Console.OutputEncoding = Encoding.Unicode;
+
+Console.Clear();
 
 // Läs in användarnamn
 /* Console.Write("Ange användarnamn: ");
