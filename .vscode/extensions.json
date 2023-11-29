@@ -2,7 +2,6 @@
     "recommendations": [
         "ms-dotnettools.csharp",
         "emmanuelbeziat.vscode-great-icons",
-        "github.classroom",
         "chrisdias.vscode-opennewinstance",
         "jebbs.plantuml",
         "pierre3.csharp-to-plantuml",
