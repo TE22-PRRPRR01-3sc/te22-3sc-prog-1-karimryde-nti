@@ -1,8 +1,8 @@
 ﻿// Labyrint, ett konsolsspel
 Console.Clear();
 
-// Aktivera UTF8 för att visa Emoji
-Console.OutputEncoding = System.Text.Encoding.UTF8;
+// Aktivera Unicode för att visa Emoji
+Console.OutputEncoding = System.Text.Encoding.Unicode;
 
 // Skapar en labyrint 10 x 10
 int[,] labyrint = {
@@ -35,7 +35,47 @@ for (int y = 0; y < 10; y++)
         {
             Console.Write("⬛");
         }
+        else
+        {
+            Console.Write("  ");
+        }
     }
 }
 
+// Låta användaren styra en figur
+Console.CursorVisible = false;
 
+// Var är figuren?
+int figurX = 1;
+int figurY = 1;
+
+// Interaktionsloop, där vi lyssnar på tangentnedtryckningar
+while (true)
+{
+    // Läs in tangenten
+    ConsoleKeyInfo tangent = Console.ReadKey(true);
+
+    // Flytta en figur med piltangenterna
+    if (tangent.Key == ConsoleKey.RightArrow)
+    {
+        figurX += 1; // Högerpil flyttar +1 
+    }
+    else if (tangent.Key == ConsoleKey.LeftArrow)
+    {
+        figurX -= 1; // Högerpil flyttar -1 
+    }
+    else if (tangent.Key == ConsoleKey.UpArrow)
+    {
+        figurY -= 1; // Uppåtpil flyttar -1
+    }
+    else if (tangent.Key == ConsoleKey.DownArrow)
+    {
+        figurY += 1; // Uppåtpil flyttar +1
+    }
+
+    // Flytta markören (cursor)
+    Console.SetCursorPosition(figurX * 2, figurY);
+
+    // Rita ut en figur
+    Console.Write("☕");
+}
